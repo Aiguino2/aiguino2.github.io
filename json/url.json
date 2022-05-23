@@ -8,5 +8,10 @@
         "id":"2",
         "nombre":"Prueba",
         "enlace":"#"
+    },
+    {
+        "id":"3",
+        "nombre":"Bromita",
+        "enlace":"./broma"
     }
 ]

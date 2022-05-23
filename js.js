@@ -2,8 +2,8 @@ import enlaces from "./json/url.json" assert {type:"json"};
 var articulos = [];
 window.onload = function() {
     for (let i=0;i<enlaces.length;i++) {
-        document.body.innerHTML+= 
-        `<article id="${i+1}"><h1>${enlaces[i].nombre}</h1></article>`
+        document.querySelector("#enlaces").innerHTML+= 
+        `<article id=${i+1} class=enlace><h1>${enlaces[i].nombre}</h1></article>`
     }
 
     articulos = articulos.slice.call(document.querySelectorAll("article"));

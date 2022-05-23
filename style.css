@@ -22,7 +22,7 @@ body {
     margin-right:auto;
 }
 
-body article {
+.enlace {
     width: max-content;
     text-align:center;
     margin-left:auto;
@@ -31,17 +31,15 @@ body article {
     border: 0.1em solid black;
     /* border: 0; */
     border-radius:1em;
-    filter:blur(0);
     transition:1s;
 }
 
-body article:hover {
+.enlace:hover {
     border-color:#008000;
     filter:blur(0);
-    /* transform: rotateY(180deg); */
 }
 
-body article:first-of-type {
+.enlace:first-of-type {
     margin-top:17%;
 }
 
