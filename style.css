@@ -54,6 +54,7 @@ body {
     /* display:flex; */
 }
 
+
 #eruPijama:hover {
     filter:hue-rotate(90deg) blur(0);
 }

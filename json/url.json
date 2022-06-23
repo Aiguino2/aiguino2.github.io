@@ -2,7 +2,7 @@
     {
         "id":"1",
         "nombre":"Calculadora Gay",
-        "enlace":"./esGay"
+        "enlace":"./pgns/esGay"
     },
     {
         "id":"2",
@@ -12,6 +12,16 @@
     {
         "id":"3",
         "nombre":"Bromita",
-        "enlace":"./broma"
+        "enlace":"./pgns/broma"
+    },
+    {
+        "id":4,
+        "nombre":"Logger",
+        "enlace":"./pgns/logger"
+    },
+    {
+        "id":5,
+        "nombre":"Chino",
+        "enlace":"./pgns/tiendaChino"
     }
 ]
