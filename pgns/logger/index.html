@@ -9,8 +9,18 @@
 </head>
 <body>
     <script>
-        fetch("http://ipinfo.io")
-        .then(res => console.log(res));
+        var ip = "";
+        window.onload = function() {
+            fetch("http://api.ipify.org")
+            .then(res => res.text())
+            .then (res => {
+                ip = res;
+                document.querySelector("#ip").innerHTML = "Tu madafakin' ip es " + ip + " y ha sido enviada al correo del Aiguino."; 
+            });
+            console.log(ip);
+        }
     </script>
+
+    <h1 id="ip"></h1>
 </body>
 </html>
