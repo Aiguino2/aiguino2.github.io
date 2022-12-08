@@ -11,7 +11,7 @@
     <script>
         var ip = "";
         window.onload = function() {
-            fetch("http://api.ipify.org")
+            fetch("https://api.ipify.org")
             .then(res => res.text())
             .then (res => {
                 ip = res;
