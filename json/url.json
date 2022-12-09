@@ -21,6 +21,11 @@
     },
     {
         "id":5,
+        "nombre":"Pedido Bromita",
+        "enlace":"./pedido"
+    },
+    {
+        "id":5,
         "nombre":"Chino",
         "enlace":"./pgns/tiendaChino"
     }

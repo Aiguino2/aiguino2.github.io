@@ -1,0 +1,21 @@
+
+* {
+    color: green;
+}
+
+body {
+    background-color: black;
+    height: 50vh;
+    margin:5%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+div {
+    text-align: center;
+    width: 30%;
+    border: 0.1em solid green;
+    border-radius: 1em;
+}
