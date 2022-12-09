@@ -1,0 +1,49 @@
+
+html {
+    overflow: hidden;
+}
+
+.fondo {
+    z-index: -1;
+    position: absolute;
+    top:0;
+    opacity: .7;
+}
+
+.fondo img {
+    width: 198vh;
+    height: 100vh;
+}
+
+.github404 {
+    margin: 50px auto 40px auto;
+    width: 600px;
+    text-align: center;
+
+}
+
+.github404 a {
+    color: #4183c4;
+    text-decoration: none;
+}
+
+.github404 a:hover {
+    text-decoration: underline;
+}
+
+.github404 h1 {
+    width: 800px;
+    position: relative;
+    left: -100px;
+    letter-spacing: -1px;
+    line-height: 60px;
+    font-size: 60px;
+    font-weight: 100;
+    margin: 0px 0 50px 0;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.github404 p {
+    margin: 20px 0;
+    line-height: 1.6;
+}
