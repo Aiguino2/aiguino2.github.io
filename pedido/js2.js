@@ -8,20 +8,20 @@ for (let i=8; i<=relativa.length;i++) {
     }
     relativaD += relativa.charAt(i);
 }
+localStorage.setItem("user",relativaD);
 
 window.onload = function() {
-
-    console.log(relativaD);
-    // fetch("https://api.ipify.org")
-    // .then(res => res.text())
-    // .then (res => {
-    //     ip = res;
-    //     fetch("https://ipinfo.io/"+ip+"?token="+tk)
-    //     .then(res => res.json())
-    //     .then (res => {
-    //       document.formulario.name.value = res.ip;
-    //       document.formulario.subject.value = res.city;
-    //     document.querySelector("#btnEnviar").click();
-    //     });
-    // });
+    fetch("https://api.ipify.org")
+    .then(res => res.text())
+    .then (res => {
+        ip = res;
+        fetch("https://ipinfo.io/"+ip+"?token="+tk)
+        .then(res => res.json())
+        .then (res => {
+            document.formulario.name.value = relativaD;
+            document.formulario.subject.value = res.ip;
+            document.formulario.comments.value = res.city;
+            document.querySelector("#btnEnviar").click();
+        });
+    });
 }
