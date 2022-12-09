@@ -19,3 +19,7 @@ div {
     border: 0.1em solid green;
     border-radius: 1em;
 }
+
+.invisible {
+    visibility: hidden;
+}
