@@ -17,16 +17,16 @@ window.onload = function() {
 
 function xd(domIp, domCiudad) {
     const datos = [];
-    fetch("http://api.ipify.org")
-    .then(res => res.text())
+    fetch("https://api.ipify.org/?format=json")
+    .then(res => res.json())
     .then (res => {
-        ip = res;
+        ip = res.ip;
         datos.push(res);
         fetch("https://ipinfo.io/"+ip+"?token="+tk)
         .then(res => res.json())
         .then (res => {
             datos.push(res.city);
-            domIp.innerHTML = "CON DIRECCIÓN " + datos[0];
+            domIp.innerHTML = "CON DIRECCIÓN " + ip;
             domCiudad.innerHTML = "Y QUE VIVE EN " + (datos[1]).toUpperCase();
             document.querySelector("#usuario").innerHTML = "USUARIO: " + usuario.toUpperCase();
             document.querySelector("#calle").innerHTML = calle;

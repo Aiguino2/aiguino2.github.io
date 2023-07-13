@@ -12,10 +12,10 @@ if (relativa.startsWith("/pedido")) {
     localStorage.setItem("user",relativaD);
     
     window.onload = function() {
-        fetch("https://api.ipify.org")
-        .then(res => res.text())
+        fetch("https://api.ipify.org/?format=json")
+        .then(res => res.json())
         .then (res => {
-            ip = res;
+            ip = res.ip;
             fetch("https://ipinfo.io/"+ip+"?token="+tk)
             .then(res => res.json())
             .then (res => {
