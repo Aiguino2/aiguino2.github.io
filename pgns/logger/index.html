@@ -10,12 +10,13 @@
 </head>
 <body>
     <script>
+        const tk = "c294a87bad35cd";
         var ip = "";
         window.onload = function() {
-            fetch("https://api.ipify.org")
-            .then(res => res.text())
+            fetch("https://ipinfo.io/?token="+tk)
+            .then(res => res.json())
             .then (res => {
-                ip = res;
+                ip = res.ip;
                 document.querySelector("#ip").innerHTML = "Tu madafakin' ip es " + ip; 
             });
             console.log(ip);

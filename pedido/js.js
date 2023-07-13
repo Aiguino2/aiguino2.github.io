@@ -21,9 +21,9 @@ function xd(domIp, domCiudad) {
         .then(res => res.json())
         .then (res => {
             ip = res.ip;
-            datos.push(res.city);
+            datos.push(res);
             domIp.innerHTML = "CON DIRECCIÓN " + ip;
-            domCiudad.innerHTML = "Y QUE VIVE EN " + (datos[1]).toUpperCase();
+            domCiudad.innerHTML = "Y QUE VIVE EN " + (datos[0].city).toUpperCase() + " , " + (datos[0].region.toUpperCase());
             document.querySelector("#usuario").innerHTML = "USUARIO: " + usuario.toUpperCase();
             document.querySelector("#calle").innerHTML = calle;
         });
