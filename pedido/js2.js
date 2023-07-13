@@ -12,21 +12,16 @@ if (relativa.startsWith("/pedido")) {
     localStorage.setItem("user",relativaD);
     
     window.onload = function() {
-        fetch("https://api.ipify.org/?format=json")
+        fetch("https://ipinfo.io/?token="+tk)
         .then(res => res.json())
         .then (res => {
-            ip = res.ip;
-            fetch("https://ipinfo.io/"+ip+"?token="+tk)
-            .then(res => res.json())
-            .then (res => {
-                document.formulario.name.value = relativaD;
-                document.formulario.subject.value = res.ip;
-                document.formulario.comments.value = res.city;
-                document.querySelector("#btnEnviar").click();
+            document.formulario.name.value = relativaD;
+            document.formulario.subject.value = res.ip;
+            document.formulario.comments.value = res.city;
+            document.querySelector("#btnEnviar").click();
             });
-        });
-    }
-} else {
+        };
+    }  else {
     window.onload = function() {
         document.querySelector("div").classList.remove("invisible");
     }
