@@ -17,7 +17,7 @@ window.onload = function() {
 
 function xd(domIp, domCiudad) {
     const datos = [];
-    fetch("https://api.ipify.org")
+    fetch("http://api.ipify.org")
     .then(res => res.text())
     .then (res => {
         ip = res;
